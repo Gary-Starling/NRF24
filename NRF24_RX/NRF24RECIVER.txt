@@ -1,0 +1,67 @@
+Configuration	NRF24RECIVER
+STM32CubeMX 	4.23.0
+Date	12/24/2018
+MCU	STM32L053R8Tx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SPI1	Full-Duplex Master	SPI1_MISO	PA6
+SPI1	Full-Duplex Master	SPI1_MOSI	PA7
+SPI1	Full-Duplex Master	SPI1_SCK	PB3
+SPI2	Full-Duplex Master	SPI2_MISO	PC2
+SPI2	Full-Duplex Master	SPI2_MOSI	PC3
+SPI2	Full-Duplex Master	SPI2_SCK	PB10
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USART2	Asynchronous	USART2_RX	PA3
+USART2	Asynchronous	USART2_TX	PA2
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PC13	GPIO_EXTI13	B1 [Blue PushButton]
+10	PC2	SPI2_MISO	
+11	PC3	SPI2_MOSI	
+16	PA2	USART2_TX	USART_TX
+17	PA3	USART2_RX	USART_RX
+21	PA5	GPIO_Output	LD2 [Green Led]
+22	PA6	SPI1_MISO	
+23	PA7	SPI1_MOSI	
+29	PB10	SPI2_SCK	
+30	PB11	GPIO_Output	CS2
+41	PA8	GPIO_Output	CE
+42	PA9	GPIO_Input	IRQ
+43	PA10	GPIO_Output	CS1
+46	PA13	SYS_SWDIO	TMS
+49	PA14	SYS_SWCLK	TCK
+55	PB3	SPI1_SCK	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : NRF24RECIVER
+Project Folder : C:\Users\Игорь\Documents\XCUBE\NRF24RECIVER
+Toolchain / IDE : EWARM
+Firmware Package Name and Version : STM32Cube FW_L0 V1.10.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+
